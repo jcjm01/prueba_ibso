@@ -1,0 +1,60 @@
+                                       *******4.	Examen técnico******** 
+
+Explica con el mayor detalle las respuestas a estas preguntas (45 minutos).
+
+
+
+1.	La información del ERP del cliente vive en un data center controlado por un proveedor, con reglas que no permiten adicionar campos, 
+columnas, construir tablas o extraer información. ¿Qué pasos harías para pasar de la información en el ERP, cruzar y transformarla, y mandarla 
+a una herramienta de Business Intelligence con actualizaciones automáticas?
+
+*Entender la estructura y la accesibilidad en el ERP para identificar las interfaces
+
+*Seleccionar el metodo para extraer datos.Podemos usar los metodos de API si el ERP lo permite,si no se puede podriamos usar el metodo de web scraping
+ o exportacion de archivos como excel o CSV.
+
+*Con scripts podemos automatizar la extraccion de datos.Para esto es muy util usar python y librerias como selenium o request
+
+*Limpiar los datos y cargarlos a alguna herramienta de BI y configurar un flujo de datos.
+
+
+
+2.	El cliente de la pregunta 1 está evaluando adquirir un servidor físico o en la nube para poder alojar ahí un espejo de la información de su ERP. 
+¿Qué recomendarías en cuanto a costo o inversión y el rendimiento esperado dadas las características de cada una de las opciones?
+
+*Recomendaria un servicio en la nube ya que al ser un servidor virtual no requiere tanta inversion como lo requiere un servidor fisico en costos como
+luz,mantenimiento y escalabilidad mas dificil.
+
+
+
+
+3.-	Un cliente solamente cuenta con un servidor de producción donde viven los datos, ¿qué sugerirías para
+ no afectar el desempeño de esta al conectar BI?
+
+*Un metodo que podria ayudar a es crear un servidor espejo que sea exclusivo para ciertas consultas asi como operaciones como 
+extraccion y analisis de datos en horas de menor carga.
+
+
+
+4.	Un query que escribiste regresa 10,000 filas únicamente, pero su ejecución toma entre 3 y 4 horas. Por lo mismo, muchas veces no 
+llegan los resultados completos a BI o se pierde la conexión mientras esto ocurre. ¿Qué harías?
+
+*Dos metodos que podrian ser utiles para este incidente es cachear la informacion para un acceso mas rapido asi como ejecutar los queryes en
+ horas de menos trafico.
+
+
+
+5.	Te busca un cliente para decirte que los resultados que ve en los tableros no le hacen sentido (ayer si mostraba resultados correctos). 
+ ¿Qué pasos harías para darle una respuesta al cliente? 
+
+*Revisar los logs del sistema y de las aplicaciones que hacen la extraccion de datos con el fin de encontrar algun posible mensaje de error y
+si se encuentra monitoreando revisar las metricas del mismo.
+
+
+
+
+6.	¿Qué mejores prácticas sugerirías para garantizar la seguridad de la información del cliente, ya sea en un servidor físico o en la nube?
+Para tener un entorno seguro de almacenamiento de informacion hay varios metodos para lograrlo por ejemplo el uso de contraseña alfanumericas 
+y con caracteres especiales asi como que el usuario use herramientas como antivirus en su equipo personal,boveda de contraseñas y VPN.
+
+ 
